@@ -10,13 +10,17 @@
     <div id="directory-selection" class="screen">
         <h1>Selecione o diretório do projeto Node</h1>
         <button id="select-directory">Selecionar Diretório</button>
+        <input id="directory" placeholder="Diretório selecionado"/>
         <button id="update-directory" style="display: none;">Atualizar (Git Pull)</button>
+        <button id="next" style="display: none;">Avançar</button>
     </div>
 
     <div id="main-screen" class="screen" style="display: none;">
         <button id="back-to-directory">Voltar para seleção de diretório</button>
         <textarea id="message" placeholder="Digite sua mensagem aqui"></textarea>
+        <label>Faça upload do csv</label>
         <input type="file" id="csv-upload" accept=".csv">
+        <label>Faça upload de arquivos de mídia (pdf, png, jpg, jpeg)</label>
         <input type="file" id="media-upload" accept=".pdf,.png,.jpg,.jpeg" multiple>
         <button id="submit">Enviar</button>
     </div>

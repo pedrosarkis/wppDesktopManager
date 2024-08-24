@@ -21,7 +21,6 @@ function createWindow () {
   });
 
   win.loadFile('index.html');
-  win.webContents.openDevTools();
 }
 
 app.whenReady().then(createWindow);
@@ -60,7 +59,7 @@ ipcMain.handle('validate-node-project', async (event, dirPath) => {
 
 ipcMain.handle('git-pull', async (event, dirPath) => {
   return new Promise((resolve, reject) => {
-    exec('git pull', { cwd: dirPath }, (error, stdout, stderr) => {
+    exec('git pull origin master', { cwd: dirPath }, (error, stdout, stderr) => {
       if (error) {
         reject(error);
       } else {
