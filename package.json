@@ -1,0 +1,18 @@
+{
+  "name": "wppdesktopmanager",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "electron": "^32.0.1",
+    "electron-store": "^10.0.0"
+  }
+}

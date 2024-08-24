@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electron App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="directory-selection" class="screen">
+        <h1>Selecione o diretório do projeto Node</h1>
+        <button id="select-directory">Selecionar Diretório</button>
+        <button id="update-directory" style="display: none;">Atualizar (Git Pull)</button>
+    </div>
+
+    <div id="main-screen" class="screen" style="display: none;">
+        <button id="back-to-directory">Voltar para seleção de diretório</button>
+        <textarea id="message" placeholder="Digite sua mensagem aqui"></textarea>
+        <input type="file" id="csv-upload" accept=".csv">
+        <input type="file" id="media-upload" accept=".pdf,.png,.jpg,.jpeg" multiple>
+        <button id="submit">Enviar</button>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
