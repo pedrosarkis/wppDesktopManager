@@ -5,14 +5,28 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.wpp.id",
+    "productName": "Gerenciador Whatsapp",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "portable"
+    }
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "csv-parser": "^3.0.0",
-    "electron": "^32.0.1",
     "electron-store": "^10.0.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^24.13.3",
+    "electron": "^32.0.1"
   }
 }
